@@ -1,11 +1,15 @@
 # Linux-Server-Configuration
 IP Address: 35.160.197.79
 
+
 SSH Port: 2200
+
 
 URL: http://ec2-35-160-197-79.us-west-2.compute.amazonaws.com
 
+
 ## Software Installed:
+
 
 	apache2
 	libapache2-mod-wsgi
@@ -25,6 +29,7 @@ URL: http://ec2-35-160-197-79.us-west-2.compute.amazonaws.com
   
 ## Summary of Main Configuration Changes Made
 (Note: this doesn’t include removing errors that I had and debugging):
+
 
 	Created a new user named grader
 	  sudo adduser grader
@@ -87,77 +92,118 @@ URL: http://ec2-35-160-197-79.us-west-2.compute.amazonaws.com
 	  Added hostname/ public ip address to Authorized Javascript Origins and host name + oauth2callback to the Authorized redirect URIs in Google’s Developer Console
 
 
+
+
 ## Resources:
 
-	[https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps]
 
-	[https://github.com/stueken/FSND-P5_Linux-Server-Configuration]
+	(https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
 
-	[http://www.hcidata.info/host2ip.cgi]
 
-	[https://discussions.udacity.com/t/interact-with-database/29136/2]
+	(https://github.com/stueken/FSND-P5_Linux-Server-Configuration)
 
-	[https://discussions.udacity.com/t/apache-cant-find-file-in-main-directory/24498/5]
 
-	[https://discussions.udacity.com/t/getting-the-rest-of-my-app-to-run-almost-there/30237]
+	(http://www.hcidata.info/host2ip.cgi)
 
-	[https://discussions.udacity.com/t/how-to-move-a-flask-app-from-using-a-sqlite3-db-to-postgresql/7004/6]
 
-	[https://discussions.udacity.com/t/cannot-setup-database-using-postgresql-b-c-of-user-authorization/30430/11]
+	(https://discussions.udacity.com/t/interact-with-database/29136/2)
 
-	[https://discussions.udacity.com/t/step-10-catalog-user/157413/4]
 
-	[https://discussions.udacity.com/t/step-10-catalog-user/157413]
+	(https://discussions.udacity.com/t/apache-cant-find-file-in-main-directory/24498/5)
 
-	[https://discussions.udacity.com/t/create-a-new-user-named-catalog-that-has-limited-permissions-to-your-catalog-application-database/46363/2]
 
-	[https://discussions.udacity.com/t/disable-remote-login-of-root-user-limited-permission-role/43644]
+	(https://discussions.udacity.com/t/getting-the-rest-of-my-app-to-run-almost-there/30237)
 
-	[https://discussions.udacity.com/t/question-on-postgresql-configuration/39314/2]
 
-	[https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps]
+	(https://discussions.udacity.com/t/how-to-move-a-flask-app-from-using-a-sqlite3-db-to-postgresql/7004/6)
 
-	[https://help.github.com/articles/set-up-git/#platform-linux]
 
-	[https://help.ubuntu.com/community/UFW]
+	(https://discussions.udacity.com/t/cannot-setup-database-using-postgresql-b-c-of-user-authorization/30430/11)
 
-	[http://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade]
 
-	[https://discussions.udacity.com/t/wsgi-error-no-module-named-catalog/35734]
+	(https://discussions.udacity.com/t/step-10-catalog-user/157413/4)
 
-	[https://discussions.udacity.com/t/i-dont-see-my-application-i-only-get-hello-world-its-working/175954]
 
-	[https://discussions.udacity.com/t/invalidclientsecretserror-file-not-found-client-secrets-json/32482]
+	(https://discussions.udacity.com/t/step-10-catalog-user/157413)
 
-	[https://www.postgresql.org/docs/8.0/static/sql-alteruser.html]
 
-	[https://discussions.udacity.com/t/p5-how-i-got-through-it/15342/2]
+	(https://discussions.udacity.com/t/create-a-new-user-named-catalog-that-has-limited-permissions-to-your-catalog-application-database/46363/2)
 
-	[http://dba.stackexchange.com/questions/35316/why-is-a-new-user-allowed-to-create-a-table]
 
-	[https://docs.python.org/2/tutorial/modules.html]
+	(https://discussions.udacity.com/t/disable-remote-login-of-root-user-limited-permission-role/43644)
 
-	[http://stackoverflow.com/questions/30969296/flask-from-app-import-app]
 
-	[https://www.loggly.com/ultimate-guide/access-and-error-logs/]
+	(https://discussions.udacity.com/t/question-on-postgresql-configuration/39314/2)
 
-	[http://blog.trackets.com/2013/08/19/postgresql-basics-by-example.html]
 
-	[https://discussions.udacity.com/t/disallowing-remote-connections-to-my-postgresql-db/36364]
+	(https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps)
 
-	[https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04]
 
-	[http://askubuntu.com/questions/256013/could-not-reliably-determine-the-servers-fully-qualified-domain-name]
+	(https://help.github.com/articles/set-up-git/#platform-linux)
 
-	[https://discussions.udacity.com/t/specific-questions-on-project-5/41095/]
 
-	[https://discussions.udacity.com/t/configuring-utc-time-zone/35776]
+	(https://help.ubuntu.com/community/UFW)
 
-	[https://discussions.udacity.com/t/how-to-connect-grader-login-in-the-root/32659/]
 
-	[https://help.ubuntu.com/community/Sudoers]
+	(http://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade)
 
-	[https://discussions.udacity.com/t/configuring-a-linux-server/166552]
 
-	[https://discussions.udacity.com/t/how-to-login-to-my-aws-virtual-server-as-new-user-grader/201164]
+	(https://discussions.udacity.com/t/wsgi-error-no-module-named-catalog/35734)
+
+
+	(https://discussions.udacity.com/t/i-dont-see-my-application-i-only-get-hello-world-its-working/175954)
+
+
+	(https://discussions.udacity.com/t/invalidclientsecretserror-file-not-found-client-secrets-json/32482)
+
+
+	(https://www.postgresql.org/docs/8.0/static/sql-alteruser.html)
+
+
+	(https://discussions.udacity.com/t/p5-how-i-got-through-it/15342/2)
+
+
+	(http://dba.stackexchange.com/questions/35316/why-is-a-new-user-allowed-to-create-a-table)
+
+
+	(https://docs.python.org/2/tutorial/modules.html)
+
+
+	(http://stackoverflow.com/questions/30969296/flask-from-app-import-app)
+
+
+	(https://www.loggly.com/ultimate-guide/access-and-error-logs/)
+
+
+	(http://blog.trackets.com/2013/08/19/postgresql-basics-by-example.html)
+
+
+	(https://discussions.udacity.com/t/disallowing-remote-connections-to-my-postgresql-db/36364)
+
+
+	(https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04)
+
+
+	(http://askubuntu.com/questions/256013/could-not-reliably-determine-the-servers-fully-qualified-domain-name)
+
+
+	(https://discussions.udacity.com/t/specific-questions-on-project-5/41095/)
+
+
+	(https://discussions.udacity.com/t/configuring-utc-time-zone/35776)
+
+
+	(https://discussions.udacity.com/t/how-to-connect-grader-login-in-the-root/32659/)
+
+
+	(https://help.ubuntu.com/community/Sudoers)
+
+
+	(https://discussions.udacity.com/t/configuring-a-linux-server/166552)
+
+
+	(https://discussions.udacity.com/t/how-to-login-to-my-aws-virtual-server-as-new-user-grader/201164)
+
+
+
 
