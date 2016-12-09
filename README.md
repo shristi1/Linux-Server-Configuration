@@ -1,7 +1,10 @@
 # Linux-Server-Configuration
 IP Address: 35.160.197.79
+
 SSH Port: 2200
+
 URL: http://ec2-35-160-197-79.us-west-2.compute.amazonaws.com
+
 Software Installed:
 	apache2
 	libapache2-mod-wsgi
