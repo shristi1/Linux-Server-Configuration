@@ -30,28 +30,35 @@ Summary of Main Configuration Changes Made (Note: this doesn’t include removin
 	  Gave the grader the permission to sudo
 	    sudo nano /etc/sudoers.d/grader
 	    add: "grader ALL=(ALL) NOPASSWD:ALL" to file
+	    
 	Updated all currently installed packages
 	  apt-get update
 	  sudo sudo apt-get upgrade
+	  
 	Changed the SSH port from 22 to 2200
 	  sudo nano /etc/ssh/sshd_config
 	  Changed line “Port 22” to “Port 2200"
+	  
 	Configured the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123)
 	  sudo ufw default deny incoming
 	  sudo ufw default allow outgoing
 	  sudo ufw allow 2200
 	  sudo ufw allow 80
 	  sudo ufw allow 123
+	  
 	Configured the local timezone to UTC
 	  Used “date” command and found that it was already configured to UTC
+	  
 	Installed and configured Apache to serve a Python mod_wsgi application
 	  sudo apt-get install apache2
 	  sudo apt-get install libapache2-mod-wsgi
+	  
 	Installed and configured PostgreSQL:
 	  sudo apt-get install postgresql postgresql-contrib
 	  Changed database connection in database_setup.py, __init__.py, and add items.py after step 11:C
 	  Disabled remote connections
 	  Checked in /etc/postgresql/9.3/main/pg_hba.conf to make sure no connections were allowed
+	
 	Created a new user named catalog that had limited permissions to the catalog application database
 	sudo adduser catalog
 	  As postgres user in sql:
@@ -61,6 +68,7 @@ Summary of Main Configuration Changes Made (Note: this doesn’t include removin
 	    In database revoked all rights and granted access to only catalog: 
 	    REVOKE ALL ON SCHEMA public FROM public;
 	    GRANT ALL ON SCHEMA public TO catalog;
+	
 	Installed git, cloned and setup my Catalog App project 
 	  Installed Git and connected github account
 	  Enabled Apache to serve Flask applications:
