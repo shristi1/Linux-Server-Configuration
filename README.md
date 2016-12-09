@@ -5,7 +5,7 @@ SSH Port: 2200
 
 URL: http://ec2-35-160-197-79.us-west-2.compute.amazonaws.com
 
-Software Installed:
+# Software Installed:
 
 	apache2
 	libapache2-mod-wsgi
@@ -23,15 +23,16 @@ Software Installed:
 	python-dev
 	Flask-SQLAlchemy
   
-Summary of Main Configuration Changes Made (Note: this doesn’t include removing errors that I had and debugging):
+# Summary of Main Configuration Changes Made
+(Note: this doesn’t include removing errors that I had and debugging):
 
-	Created a new user named grader
+	# Created a new user named grader
 	  sudo adduser grader
 	  Gave the grader the permission to sudo
 	    sudo nano /etc/sudoers.d/grader
 	    add: "grader ALL=(ALL) NOPASSWD:ALL" to file
 	    
-	Updated all currently installed packages
+	# Updated all currently installed packages
 	  apt-get update
 	  sudo sudo apt-get upgrade
 	  
@@ -86,7 +87,7 @@ Summary of Main Configuration Changes Made (Note: this doesn’t include removin
 	  Added hostname/ public ip address to Authorized Javascript Origins and host name + oauth2callback to the Authorized redirect URIs in Google’s Developer Console
 
 
-Resources:
+# Resources:
 
 	https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 
