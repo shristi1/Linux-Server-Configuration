@@ -168,6 +168,6 @@ https://discussions.udacity.com/t/configuring-a-linux-server/166552
 
 https://discussions.udacity.com/t/how-to-login-to-my-aws-virtual-server-as-new-user-grader/201164
 
-
+http://askubuntu.com/questions/524999/how-to-enable-sudo-passowrd
 
 
